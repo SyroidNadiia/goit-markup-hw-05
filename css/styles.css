@@ -306,6 +306,23 @@ img {
   width: 528px;
   height: 581px;
   background-color: var(--white);
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+}
+.button-modal {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+
+  display: flex;
+  border-radius: 50%;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  background-color: var(--white);
+  justify-content: center;
+  align-items: center;
+  height: 30px;
+  width: 30px;
 }
 
 .section {
