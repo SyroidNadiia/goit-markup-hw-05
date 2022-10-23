@@ -139,7 +139,7 @@ body {
 }
 
 .container {
-  width: 1200px;
+  max-width: 1200px;
   padding-left: 15px;
   padding-right: 15px;
   margin: 0 auto;
@@ -174,6 +174,8 @@ img {
 .benefits-list {
   list-style: none;
   display: flex;
+  gap: 30px;
+  padding: 0;
 }
 
 .benefits-element {
@@ -192,9 +194,9 @@ img {
   align-items: center;
 }
 
-.benefits-item:not(:last-child) {
+/* .benefits-item:not(:last-child) {
   margin-right: 30px;
-}
+} */
 
 .button {
   font-family: inherit;
@@ -251,7 +253,6 @@ img {
 
 .overlay {
   max-width: 1600px;
-  height: 600px;
   margin-left: auto;
   margin-right: auto;
   background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
@@ -297,11 +298,12 @@ img {
   display: flex;
   justify-content: center;
   margin-bottom: 50px;
+  gap: 8px;
 }
 
-.button.list .item:not(:last-child) {
+/* .button.list .item:not(:last-child) {
   margin-right: 8px;
-}
+} */
 
 /* Modal */
 .backdrop {
@@ -312,6 +314,8 @@ img {
   height: 100%;
   background-color: rgba(0, 0, 0, 0.2);
   opacity: 1;
+  transition: opacity 250ms var(--time-distribution-function),
+    visibility 250ms var(--time-distribution-function);
 }
 
 .backdrop.is-hidden {
@@ -400,10 +404,7 @@ img {
 
 .team.list {
   display: flex;
-}
-
-.team.list .item:not(:last-child) {
-  margin-right: 30px;
+  gap: 30px;
 }
 
 .team {
@@ -464,12 +465,9 @@ img {
 .works.list {
   display: flex;
   flex-wrap: wrap;
+  gap: 30px;
 }
 
-.works.item {
-  margin-right: 30px;
-  margin-bottom: 30px;
-}
 .works-thumb {
   position: relative;
   overflow: hidden;
@@ -505,14 +503,6 @@ img {
   border: 1px solid #eeeeee;
 }
 
-.works.item:nth-child(3n) {
-  margin-right: 0px;
-}
-
-.works.item:nth-last-child(-n + 3) {
-  margin-bottom: 0px;
-}
-
 .works-title {
   margin-top: 20px;
   margin-bottom: 4px;
@@ -539,9 +529,8 @@ img {
 .examples {
   display: flex;
 }
-
-.examples .item:not(:last-child) {
-  margin-right: 30px;
+.examples.list {
+  gap: 30px;
 }
 
 .team h3 {
@@ -588,6 +577,7 @@ img {
   list-style: none;
   justify-content: center;
   padding-left: 0px;
+  gap: 30px;
 }
 
 .clientage-item {
@@ -597,9 +587,9 @@ img {
   max-width: 170px;
 }
 
-.clientage-item:not(:last-child) {
+/* .clientage-item:not(:last-child) {
   margin-right: 30px;
-}
+} */
 
 .clientage-icon {
   fill: rgba(175, 177, 184, 1);
